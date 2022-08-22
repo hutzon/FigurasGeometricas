@@ -1,0 +1,202 @@
+:root{
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #60ed0f;
+    --secundario: #1da5b4;
+    --gris:#757575;
+    --gris-claro: #dfd9f3;
+    --azul-marino: #000080;
+    --azul-secundario: #0C4EBB;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+
+.contenedor_titulo {
+  height: 75px;
+  width: 100%;
+  background-color: var(--secundario);
+  text-align: center;
+}
+
+.contenedor_titulo h1 {
+  padding-top: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contenedor_titulo span{
+    font-size: 15px;
+}
+
+.contenedor_principal {
+  height: 1000px;
+  width: 100%;
+  background-image: url(../img/kamehouse.jpg);
+  background-position: inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contenedor_seccion {
+  padding-top: 100px;
+  padding-left: 5%;
+  padding-bottom: 100px;
+  width: 100%;
+  height: 10px;
+  display: grid;
+  gap: 10px 15px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.cuadrado {
+  width: 100px;
+  height: 100px;
+  background: var(--azul-marino);
+}
+
+.marco {
+  width: 100px;
+  height: 100px;
+  border: 3px solid var(--oscuro);
+}
+
+.cuadrado-marco {
+  width: 100px;
+  height: 100px;
+  border: 3px solid #555;
+  background: var(--azul-marino);
+}
+
+.rectangulo {
+  width: 140px;
+  height: 70px;
+  background: var(--azul-marino);
+}
+
+.rombo {
+  width: 100px;
+  height: 100px;
+  border: 3px solid var(--oscuro);
+  background: var(--azul-marino);
+  -webkit-transform: rotate(45deg) skew(15deg, 15deg);
+  -moz-transform: rotate(45deg) skew(15deg, 15deg);
+  -ms-transform: rotate(45deg) skew(15deg, 15deg);
+  -o-transform: rotate(45deg) skew(15deg, 15deg);
+  transform: rotate(45deg) skew(15deg, 15deg);
+}
+
+.contenedor_seccion_2 {
+  padding-top: 200px;
+  padding-left: 15%;
+  width: 100%;
+  height: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.paralelogramo {
+  width: 110px;
+  height: 70px;
+  border: 3px solid var(--oscuro);
+  background: var(--primario);
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+  -ms-transform: skew(20deg);
+  -o-transform: skew(20deg);
+  transform: skew(20deg);
+}
+
+.trapecio {
+  width: 100px;
+  height: 0px;
+  border-right: 60px solid transparent;
+  border-left: 60px solid transparent;
+  border-bottom: 100px solid var(--primario);
+}
+
+.trapecio-invertido {
+  width: 100px;
+  height: 0px;
+  border-right: 60px solid transparent;
+  border-left: 60px solid transparent;
+  border-top: 100px solid var(--primario);
+}
+
+.triangulo-derecha {
+  width: 0;
+  height: 0;
+  border-left: 100px solid var(--primario);
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+}
+
+
+
+.contenedor_seccion_3 {
+    padding-top: 300px;
+    padding-left: 5%;
+    width: 100%;
+    height: 10px;
+    display: grid;
+  
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.circulo {
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: var(--azul-secundario);
+}
+
+.ovalo {
+  width: 250px;
+  height: 100px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background:var(--azul-secundario);
+}
+
+.huevo {
+  width: 126px;
+  height: 180px;
+  background-color:var(--azul-secundario);
+  -moz-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  -webkit-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.pac-man {
+  width: 0;
+  height: 0;
+  border-right: 50px solid transparent;
+  border-top: 50px solid var(--azul-secundario);
+  border-left: 50px solid var(--azul-secundario);
+  border-bottom: 50px solid var(--azul-secundario);
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+
+.luna {
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -moz-box-shadow: 30px 10px 0 var(--azul-secundario);
+  -webkit-box-shadow: 30px 10px 0 var(--azul-secundario);
+  box-shadow: 30px 10px 0 var(--azul-secundario);
+}
